@@ -340,7 +340,7 @@
                 </div>
                 <div class="stat-item">
                     <div class="stat-number" data-target="200">0</div>
-                    <div class="stat-label">Events Completed</div>
+                    <div class="stat-label">Events Completed This Year</div>
                 </div>
             </div>
         </section>
