@@ -228,7 +228,48 @@
 
         .event-date {
             color: #ff4d4d;
-            font-weight: 600;
+        }
+          .testimonials-carousel {
+              position: relative;
+              max-width: 1200px;
+              margin: 0 auto;
+              padding: 20px 40px;
+          }
+
+
+
+
+
+
+
+          .carousel-btn {
+              position: absolute;
+
+              top: 50%;  /* Ensure both buttons are aligned vertically */
+              transform: translateY(-50%);
+              background: white;
+              border: none;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              cursor: pointer;
+              box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+              z-index: 2;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+
+          .carousel-btn.prev { 
+
+              left: -10px;  /* Adjust as needed to align with content */
+          }
+
+          .carousel-btn.next { 
+
+              right: -10px;  /* Adjust as needed to align with content */
+          }
+        }        }            font-weight: 600;
             margin-bottom: 10px;
         }
 
@@ -284,8 +325,50 @@
             color: #666;
             font-size: 0.9em;
         }
+          .testimonials-carousel {
+              position: relative;
+              max-width: 1200px;
+              margin: 0 auto;
+              padding: 20px 40px;
+          }
 
+          .testimonials-wrapper {
+              display: flex;
+              overflow: hidden;
+              scroll-behavior: smooth;
+              gap: 20px;
+          }
+            .testimonial-slide {
+                min-width: calc(33.333% - 14px);
+                background: white;
+                border-radius: 15px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+             }
+              .carousel-btn {
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  background: white;
+                  border: none;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  cursor: pointer;
+                  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                  z-index: 2;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+              }
 
+              .carousel-btn.prev { 
+                  left: -30px;
+              }
+
+              .carousel-btn.next { 
+                  right: -30px;
+              }
         /* Newsletter */
         .newsletter-section {
             background: linear-gradient(135deg, #333, #666);
@@ -442,20 +525,78 @@
             </div>
         </section>
 
-        <section class="testimonials">
+        <!-- Testimonials -->
+
+        <section class="testimonials-carousel">
                     <h2 class="section-title">Runner Stories</h2>
-                        <div class="testimonials-grid">
-                        <div class="testimonial-card">
-                        <img src="images/runners/runner1.jpg" alt="Runner" class="runner-photo">
-                        <div class="testimonial-content">
-                            <p>"Pengalaman luar biasa di Borobudur Marathon! Organisasi event sangat profesional."</p>
-                        <div class="runner-info">
-                            <strong>Sarah Wijaya</strong>
-                            <span>Finisher Borobudur Marathon 2023</span>
-                        </div>
+                    <div class="testimonials-carousel">
+                    <button class="carousel-btn prev">❮</button>
+                        <div class="testimonials-wrapper">
+        
+        <!-- Testi 1-->
+        <div class="testimonial-slide">
+                <img src="images/runners/runner1.jpg" alt="Runner" class="runner-photo">
+                <div class="testimonial-content">
+                    <p>"Pengalaman luar biasa di Borobudur Marathon! Organisasi event sangat profesional."</p>
+                    <div class="runner-info">
+                        <strong>Sarah Wijaya</strong>
+                        <span>Finisher Borobudur Marathon 2023</span>
                     </div>
                 </div>
             </div>
+            
+        <!-- Testi 2-->
+    <div class="testimonial-slide">
+        <img src="images/runners/runner2.jpg" alt="Runner" class="runner-photo">
+        <div class="testimonial-content">
+            <p>"Salonpas Run 2024 memberikan pengalaman yang tak terlupakan. Route dan medal nya keren!"</p>
+            <div class="runner-info">
+                <strong>Budi Santoso</strong>
+                <span>10K Runner - Salonpas Run 2024</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testi 3 -->
+    <div class="testimonial-slide">
+        <img src="images/runners/runner3.jpg" alt="Runner" class="runner-photo">
+        <div class="testimonial-content">
+            <p>"Race.id membantu saya menemukan event lari terbaik. Informasinya lengkap dan akurat."</p>
+            <div class="runner-info">
+                <strong>Linda Kusuma</strong>
+                <span>Half Marathon Enthusiast</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testi 4 -->
+    <div class="testimonial-slide">
+            <img src="images/runners/runner4.jpg" alt="Runner" class="runner-photo">
+            <div class="testimonial-content">
+            <p>"Victoria Run 2024 sangat terorganisir dengan baik. Hydration station tersebar merata!"</p>
+                <div class="runner-info">
+                    <strong>Ahmad Rizki</strong>
+                    <span>30K Finisher - Victoria Run</span>
+                </div>
+        </div>
+        </div>
+
+    <!-- Testi 5 -->
+        <div class="testimonial-slide">
+            <img src="images/runners/runner5.jpg" alt="Runner" class="runner-photo">
+            <div class="testimonial-content">
+            <p>"Astra Run 2024 menjadi motivasi saya untuk terus aktif dalam komunitas lari."</p>
+                <div class="runner-info">
+                    <strong>Maya Putri</strong>
+                    <span>5K Runner - Astra Run 2024</span>
+                </div>
+        </div>
+        </div>
+        </div>
+
+        </div>
+        <button class="carousel-btn next">❯</button>
+        </div>
         </section>
 
 
@@ -585,27 +726,41 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Testimonials Animation
-    const testimonialCards = document.querySelectorAll('.testimonial-card');
-    const observerOptions = {
-        threshold: 0.2,
-        rootMargin: '0px'
-    };
+    document.addEventListener('DOMContentLoaded', function() {
+        const wrapper = document.querySelector('.testimonials-wrapper');
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+        const nextBtn = document.querySelector('.carousel-btn.next');
+        let currentIndex = 0;
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+        // Set initial position
+        wrapper.style.transform = 'translateX(0)';
+
+        function slideNext() {
+            if (currentIndex < slides.length - 3) {
+                currentIndex++;
+                updateSlidePosition();
             }
-        });
-    }, observerOptions);
+        }
 
-    testimonialCards.forEach(card => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'all 0.6s ease-out';
-        observer.observe(card);
+        function slidePrev() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlidePosition();
+            }
+        }
+
+        function updateSlidePosition() {
+            const slideWidth = slides[0].offsetWidth + 20; // Including gap
+            wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+
+        // Event listeners
+        nextBtn.addEventListener('click', slideNext);
+        prevBtn.addEventListener('click', slidePrev);
+
+        // Auto slide every 5 seconds
+        setInterval(slideNext, 5000);
     });
 
     // Email validation helper
