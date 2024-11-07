@@ -40,15 +40,15 @@
 
 6. Access the application at http://localhost:8000
 
-How to Contribute 🤝
+# How to Contribute 🤝
 1. Fork this repository.
-2. Create a new feature branch (git checkout -b your-feature).
-3. Commit your changes (git commit -am 'Add new feature').
-4. Push to the branch (git push origin your-feature).
+2. Create a new feature branch (`git checkout -b your-feature`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin your-feature`).
 5. Create a Pull Request.
 
-License 📄
-This project is licensed under the MIT License.
+# License 📄
+This project is licensed under the [MIT License](LICENSE).
 
 
 Race.id - Bringing you one step closer to your marathon dreams! 🏅
