@@ -232,6 +232,60 @@
             margin-bottom: 10px;
         }
 
+        /* Testimonials Styles */
+        .testimonials {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .runner-photo {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .testimonial-content {
+            padding: 20px;
+        }
+
+        .runner-info {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .runner-info strong {
+            color: #333;
+        }
+
+        .runner-info span {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+
         /* Newsletter */
         .newsletter-section {
             background: linear-gradient(135deg, #333, #666);
@@ -240,14 +294,28 @@
             text-align: center;
         }
 
-        .newsletter-form {
-            max-width: 500px;
+        .newsletter-preview {
+            max-width: 800px;
             margin: 30px auto;
-            display: flex;
-            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
         }
 
-        .newsletter-input {
+        .preview-content {
+            margin-bottom: 30px;
+        }
+
+        .preview-content ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .newsletter-form input {
             flex: 1;
             padding: 15px;
             border: none;
@@ -255,7 +323,7 @@
             font-size: 1em;
         }
 
-        .newsletter-button {
+        .newsletter-form button {
             padding: 15px 30px;
             background: #ff4d4d;
             color: white;
@@ -265,10 +333,11 @@
             transition: all 0.3s ease;
         }
 
-        .newsletter-button:hover {
+        .newsletter-form button:hover {
             background: #ff3333;
             transform: translateY(-2px);
         }
+
 
         @media (max-width: 768px) {
             .stats-container {
@@ -287,6 +356,7 @@
 </head>
 <body>
 <div class="page-content">
+
         <!-- Hero Banner -->
         <section class="hero-banner">
             <div class="banner-slider">
@@ -372,11 +442,37 @@
             </div>
         </section>
 
+        <section class="testimonials">
+                    <h2 class="section-title">Runner Stories</h2>
+                        <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                        <img src="images/runners/runner1.jpg" alt="Runner" class="runner-photo">
+                        <div class="testimonial-content">
+                            <p>"Pengalaman luar biasa di Borobudur Marathon! Organisasi event sangat profesional."</p>
+                        <div class="runner-info">
+                            <strong>Sarah Wijaya</strong>
+                            <span>Finisher Borobudur Marathon 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Newsletter -->
         <section class="newsletter-section">
             <h2>Stay Updated</h2>
             <p>Subscribe to get the latest updates on upcoming events</p>
             <form class="newsletter-form">
+        <div class="preview-content">
+            <h3>What You'll Get:</h3>
+            <ul>
+                <li>🏃 Weekly Race Updates</li>
+                <li>💪 Training Tips from Pros</li>
+                <li>🎯 Exclusive Early Bird Offers</li>
+                <li>🎁 Special Member Discounts</li>
+            </ul>
+        </div>
                 <input type="email" class="newsletter-input" placeholder="Enter your email">
                 <button type="submit" class="newsletter-button">Subscribe</button>
             </form>
@@ -466,6 +562,58 @@ document.addEventListener('DOMContentLoaded', function() {
 
     counters.forEach(counter => observer.observe(counter));
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Newsletter Form Handling
+    const newsletterForm = document.querySelector('.newsletter-form');
+    newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.querySelector('input[type="email"]').value;
+        
+        if (validateEmail(email)) {
+            // Add success animation
+            const button = this.querySelector('button');
+            button.innerHTML = '✓ Subscribed!';
+            button.style.backgroundColor = '#4CAF50';
+            
+            // Reset after 2 seconds
+            setTimeout(() => {
+                button.innerHTML = 'Subscribe Now';
+                button.style.backgroundColor = '';
+                this.reset();
+            }, 2000);
+        }
+    });
+
+    // Testimonials Animation
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    const observerOptions = {
+        threshold: 0.2,
+        rootMargin: '0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    testimonialCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'all 0.6s ease-out';
+        observer.observe(card);
+    });
+
+    // Email validation helper
+    function validateEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+});
+
 
     </script>
 </body>
