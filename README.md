@@ -20,3 +20,7 @@
    ```bash
    git clone https://github.com/AutisticKao/race-id-experimental-test.git
    cd race-id-experimental-test
+
+2. Install dependencies using Composer:
+composer install
+
