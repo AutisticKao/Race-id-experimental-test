@@ -296,12 +296,12 @@
 
         .runner-photo {
             width: 100%;
-            height: 200px;
+            height: 150px;
             object-fit: cover;
         }
 
         .testimonial-content {
-            padding: 20px;
+            padding: 15px;
         }
 
         .runner-info {
@@ -330,13 +330,13 @@
               display: flex;
               overflow: hidden;
               scroll-behavior: smooth;
-              gap: 20px;
+              gap: 10px;
           }
             .testimonial-slide {
-                min-width: calc(33.333% - 14px);
+                min-width: calc(25% - 10px);
                 background: white;
-                border-radius: 15px;
-                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                border-radius: 10px;
+                box-shadow: 0 3px 10px rgba(0,0,0,0.1);
                 transition: transform 0.3s ease;
              }
             .carousel-btn {
