@@ -1,3 +1,4 @@
+
 <?php include 'header.php'; ?>
 
 <main class="signin-container">
@@ -14,37 +15,49 @@
 </main>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
 .signin-container {
     max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #f8f8f8;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .signin-form label {
     display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .signin-form input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 12px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px;
 }
 
 .signin-btn {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #28a745;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .signin-btn:hover {
