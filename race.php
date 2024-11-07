@@ -289,7 +289,24 @@ body {
                color: var(--secondary);
                border-color: var(--primary);
           }
+
+          .filtered-results {
+                max-width: 1200px;
+                margin: 40px auto;
+                padding: 20px;
+          }
+
+            .filter-summary {
+                color: var(--gray-dark);
+                font-size: 14px;
+            }
+
+            #filterTags {
+                font-weight: bold;
+            }
+  
         </style>
+
   <main class="page-transition">
     <div class="fade-slide-in">
   <!-- Hero Section -->
@@ -472,6 +489,18 @@ body {
               </div>
           </div>
       </div>
+      
+      <!-- Tambahkan section untuk hasil filter -->
+    <section class="filtered-results fade-slide-in" id="filteredResults" style="display: none;">
+        <div class="section-header">
+        <h2>Hasil Pencarian</h2>
+        <span class="filter-summary">Showing results for: <span id="filterTags"></span></span>
+        </div>
+    
+        <div class="event-grid">
+        <!-- Event cards akan di-generate secara dinamis -->
+    </div>
+    </section>
   </section>
   </main>
 <script>
@@ -485,14 +514,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Register button functionality
-    const registerButtons = document.querySelectorAll('.register-btn');
-    registerButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const eventTitle = this.closest('.event-card').querySelector('h3').textContent;
-            alert(`Pendaftaran untuk ${eventTitle} akan segera diproses!`);
-        });
-    });
 
     const filterButton = document.querySelector('.filter-section .register-btn');
     
@@ -545,25 +566,8 @@ document.addEventListener('DOMContentLoaded', function() {
         main.classList.add('active');
     }, 100);
 
-});</script>
+});
 
-<?php include 'footer.php'; ?>
-
-
-
-<!-- Tambahkan section untuk hasil filter -->
-<section class="filtered-results fade-slide-in" id="filteredResults" style="display: none;">
-    <div class="section-header">
-        <h2>Hasil Pencarian</h2>
-        <span class="filter-summary">Showing results for: <span id="filterTags"></span></span>
-    </div>
-    
-    <div class="event-grid">
-        <!-- Event cards akan di-generate secara dinamis -->
-    </div>
-</section>
-
-<script>
 document.addEventListener('DOMContentLoaded', function() {
     const filterButton = document.querySelector('.filter-section .register-btn');
     
@@ -589,21 +593,19 @@ document.addEventListener('DOMContentLoaded', function() {
         filteredSection.scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+</script>
+
+<?php include 'footer.php'; ?>
+
+
+
+
+
+<script>
+
 </script>
 
 <style>
-.filtered-results {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-}
 
-.filter-summary {
-    color: var(--gray-dark);
-    font-size: 14px;
-}
-
-#filterTags {
-    font-weight: bold;
-}
 </style>
