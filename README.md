@@ -22,12 +22,35 @@
    cd race-id-experimental-test
 
 2. Install dependencies using Composer:
-```bash
-composer install
+    ```bash
+   composer install
 
 3. Create a .env file from .env.example and configure the database and app key:
-```bash
-cp .env.example .env
-php artisan key:generate
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+
+4. Run the database migrations:
+   ```bash
+   php artisan migrate
+
+5. Start the local server 
+   ```bash
+   php artisan serve
+
+6. Access the application at http://localhost:8000
+
+How to Contribute 🤝
+1. Fork this repository.
+2. Create a new feature branch (git checkout -b your-feature).
+3. Commit your changes (git commit -am 'Add new feature').
+4. Push to the branch (git push origin your-feature).
+5. Create a Pull Request.
+
+License 📄
+This project is licensed under the MIT License.
+
+
+Race.id - Bringing you one step closer to your marathon dreams! 🏅
 
 
