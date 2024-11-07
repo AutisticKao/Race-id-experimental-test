@@ -531,7 +531,7 @@
         
         <!-- Testi 1-->
         <div class="testimonial-slide">
-                <img src="images/runners/runner1.jpg" alt="Runner" class="runner-photo">
+                <img src="images/runner1.jpg" alt="Runner" class="runner-photo">
                 <div class="testimonial-content">
                     <p>"Pengalaman luar biasa di Borobudur Marathon! Organisasi event sangat profesional."</p>
                     <div class="runner-info">
@@ -543,7 +543,7 @@
             
         <!-- Testi 2-->
     <div class="testimonial-slide">
-        <img src="images/runners/runner2.jpg" alt="Runner" class="runner-photo">
+        <img src=images/runner 2.jpg" alt="Runner" class="runner-photo">
         <div class="testimonial-content">
             <p>"Salonpas Run 2024 memberikan pengalaman yang tak terlupakan. Route dan medal nya keren!"</p>
             <div class="runner-info">
@@ -555,7 +555,7 @@
 
     <!-- Testi 3 -->
     <div class="testimonial-slide">
-        <img src="images/runners/runner3.jpg" alt="Runner" class="runner-photo">
+        <img src="images/runner3.jpg" alt="Runner" class="runner-photo">
         <div class="testimonial-content">
             <p>"Race.id membantu saya menemukan event lari terbaik. Informasinya lengkap dan akurat."</p>
             <div class="runner-info">
@@ -567,7 +567,7 @@
 
     <!-- Testi 4 -->
     <div class="testimonial-slide">
-            <img src="images/runners/runner4.jpg" alt="Runner" class="runner-photo">
+            <img src="images/runner4.jpg" alt="Runner" class="runner-photo">
             <div class="testimonial-content">
             <p>"Victoria Run 2024 sangat terorganisir dengan baik. Hydration station tersebar merata!"</p>
                 <div class="runner-info">
