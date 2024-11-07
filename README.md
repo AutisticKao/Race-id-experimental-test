@@ -22,5 +22,12 @@
    cd race-id-experimental-test
 
 2. Install dependencies using Composer:
+```bash
 composer install
+
+3. Create a .env file from .env.example and configure the database and app key:
+```bash
+cp .env.example .env
+php artisan key:generate
+
 
