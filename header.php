@@ -212,10 +212,10 @@
         <h3>Welcome to Race.id!</h3>
         <div class="balloon-options">
             <!-- Link to auth.php for Sign In -->
-            <a href="auth.php" class="balloon-btn sign-in">Sign In</a>
+            <a href="signin.php" class="balloon-btn sign-in">Sign In</a>
             <div class="divider">or</div>
             <!-- Link to auth.php for Create Account -->
-            <a href="auth.php" class="balloon-btn create-account">Create Account</a>
+            <a href="signup.php" class="balloon-btn create-account">Create Account</a>
         </div>
     </div>
 </div>
