@@ -44,12 +44,11 @@
                 </div>
             </div>
 
-            <!-- Register Button -->
-            <div class="register-section fade-in">
-                <a href="https://salonpasrun.com/register" target="_blank" class="register-btn">
-                    Register Now
-                </a>
-            </div>
+            <div class="category-link">
+        <a href="https://salonpasletsmove.com/registrasi" target="_blank" class="link-btn">Register</a>
+    </div>
+</div>
+
         </div>
     </div>
 </main>
@@ -182,6 +181,25 @@ body {
     font-size: 14px;
     margin: 5px 0;
 }
+
+.category-link {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.link-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000000 ;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
 </style>
 
 <script>
