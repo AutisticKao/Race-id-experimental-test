@@ -1,24 +1,18 @@
 <?php include 'header.php'; ?>
 
-<main class="page-transition">
-    <div class="fade-slide-in">
-        <div class="back-button">
-            <a href="race.php" class="back-link">
-                <span>←</span> Back to Races
-            </a>
-        </div>
 
-        <div class="race-details">
+
+        <div class="race-details fade-in">
             <!-- Hero Section -->
-            <div class="race-hero">
+            <div class="race-hero fade-in">
                 <img src="images/salonpas.png" alt="Salonpas Run 2024">
-                <div class="hero-overlay">
+                <div class="hero-overlay fade-in">
                     <h1>Salonpas Run 2024</h1>
                 </div>
             </div>
 
             <!-- Event Information -->
-            <div class="event-info-container">
+            <div class="event-info-container fade-in">
                 <div class="event-info">
                     <h2>Event Details</h2>
                     <p><strong>Date:</strong> 3 November 2024</p>
@@ -28,7 +22,7 @@
             </div>
 
             <!-- Race Categories -->
-            <div class="race-categories">
+            <div class="race-categories fade-in">
                 <h2>Race Categories</h2>
                 <div class="category-cards">
                     <div class="category-card">
@@ -51,7 +45,7 @@
             </div>
 
             <!-- Register Button -->
-            <div class="register-section">
+            <div class="register-section fade-in">
                 <a href="https://salonpasrun.com/register" target="_blank" class="register-btn">
                     Register Now
                 </a>
@@ -67,6 +61,18 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .race-hero {
     position: relative;
@@ -187,6 +193,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(el => {
+        el.classList.add('active');
+    });
+});
+
 </script>
 
 <?php include 'footer.php'; ?>
