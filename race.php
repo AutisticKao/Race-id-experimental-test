@@ -402,7 +402,7 @@ body {
                       <span class="distance-tag">5K Run</span>
                       <span class="distance-tag">10K Run</span>
                   </div>
-                  <button onclick="window.location.href='race-details.php'" class="register-btn">Daftar Sekarang</button>
+                  <button onclick="window.location.href='race-details.php'" class="register-btn">Detail</button>
               </div>
           </div>
 
@@ -420,7 +420,7 @@ body {
                       <span class="distance-tag">5K Run</span>
                       <span class="distance-tag">10K Run</span>
                   </div>
-                  <button class="register-btn">Daftar Sekarang</button>
+                  <button class="register-btn">Detail</button>
               </div>
           </div>
           <!-- Victoria Run Card -->
@@ -439,7 +439,7 @@ body {
             <span class="distance-tag">HM </span>
             <span class="distance-tag">30K</span>
         </div>
-        <button class="register-btn">Daftar Sekarang</button>
+        <button class="register-btn">Detail</button>
     </div>
 </div>
       </div>
@@ -466,7 +466,7 @@ body {
                       <span class="distance-tag">10K Run</span>
                       <span class="distance-tag">HM </span>
                   </div>
-                  <button class="register-btn">Daftar Sekarang</button>
+                  <button class="register-btn">Detail</button>
               </div>
           </div>
 
@@ -485,7 +485,7 @@ body {
                       <span class="distance-tag">10K Run</span>
                       <span class="distance-tag">21K Run</span>
                   </div>
-                  <button class="register-btn">Daftar Sekarang</button>
+                  <button class="register-btn">Detail</button>
               </div>
           </div>
       </div>
