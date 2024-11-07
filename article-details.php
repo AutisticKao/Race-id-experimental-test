@@ -1,5 +1,13 @@
 <?php include 'header.php'; ?>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Essential Tips for Marathon Training - Race.id</title>
+    <!-- existing head content -->
+</head>
+
+
 <main class="article-container fade-slide-in">
     <div class="back-button">
         <a href="articles.php" class="back-link">
@@ -82,6 +90,33 @@
               <h2 id="tip10">10. Mental Preparation</h2>
               <p>Mental preparation is just as important as physical training when it comes to running a marathon. By prioritizing mental preparation, you'll be better equipped to handle the challenges of marathon running and achieve your full potential.</p>
           </div>
+
+          <!-- Social Share Section -->
+    <section class="social-share-section">
+        <h3>Share Article</h3>
+        <div class="share-buttons">
+        <button onclick="shareOnFacebook()" class="share-btn facebook">
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook</span>
+        </button>
+        <button onclick="shareOnTwitter()" class="share-btn twitter">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+        </button>
+        <button onclick="shareOnWhatsApp()" class="share-btn whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </button>
+        <button onclick="shareOnLinkedIn()" class="share-btn linkedin">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+        </button>
+        <button onclick="copyLink()" class="share-btn copy-link">
+            <i class="fas fa-link"></i>
+            <span>Copy Link</span>
+        </button>
+    </div>
+</section>
 
           <!-- Comments Section -->
           <section class="comments-section">
@@ -547,6 +582,54 @@
         margin-bottom: 0;
     }
 
+    .social-share-section {
+        margin: 40px 0;
+        padding: 30px;
+        background: #f8f8f8;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .social-share-section h3 {
+        margin-bottom: 20px;
+        font-size: 1.5em;
+        color: #333;
+    }
+
+    .share-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .share-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .share-btn:hover {
+        transform: translateY(-2px);
+    }
+
+    .share-btn.facebook { background: #1877f2; }
+    .share-btn.twitter { background: #1da1f2; }
+    .share-btn.whatsapp { background: #25d366; }
+    .share-btn.linkedin { background: #0077b5; }
+    .share-btn.copy-link { 
+        background: #333;
+        color: white;
+    }
+
+
 
     </style>
   <script>
@@ -595,11 +678,43 @@
         var scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var progress = (scrollTop / scrollHeight) * 100;
         document.querySelector(".progress-bar").style.width = progress + "%";
-}
+        }
+    });
 
+    });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const articleTitle = document.querySelector('.article-title').textContent;
+    const articleUrl = window.location.href;
+
+    window.shareOnFacebook = function() {
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${articleUrl}`, '_blank');
+    }
+
+    window.shareOnTwitter = function() {
+        window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(articleTitle)}&url=${articleUrl}`, '_blank');
+    }
+
+    window.shareOnWhatsApp = function() {
+        window.open(`https://wa.me/?text=${encodeURIComponent(articleTitle + ' ' + articleUrl)}`, '_blank');
+    }
+
+    window.shareOnLinkedIn = function() {
+        window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${articleUrl}`, '_blank');
+    }
+
+    window.copyLink = function() {
+        navigator.clipboard.writeText(articleUrl)
+            .then(() => {
+                const btn = document.querySelector('.copy-link span');
+                const originalText = btn.textContent;
+                btn.textContent = 'Copied!';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                }, 2000);
+            });
+    }
 });
 
-  });
   </script>
 <?php include 'footer.php'; ?>
