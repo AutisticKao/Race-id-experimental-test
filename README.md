@@ -6,7 +6,7 @@
 
 - **Running Calendar**: Displays a list of the latest running events in Indonesia.
 - **User Dashboard**: Users can access their profile, view registered events, and track participation history.
-- **
+- **Articles Menu**: Useres can see new articles that updated every week.
 
 ## Technologies Used 🛠️
 
