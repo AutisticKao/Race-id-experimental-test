@@ -70,13 +70,13 @@ body {
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 18px;
-    color: #007bff;
+    color: #293e94;
 }
 
 .signup-btn {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
+    background-color: #293e94;
     color: white;
     border: none;
     border-radius: 4px;
