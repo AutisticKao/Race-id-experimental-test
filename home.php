@@ -236,12 +236,6 @@
               padding: 20px 40px;
           }
 
-
-
-
-
-
-
           .carousel-btn {
               position: absolute;
 
@@ -345,30 +339,32 @@
                 box-shadow: 0 5px 15px rgba(0,0,0,0.1);
                 transition: transform 0.3s ease;
              }
-              .carousel-btn {
-                  position: absolute;
-                  top: 50%;
-                  transform: translateY(-50%);
-                  background: white;
-                  border: none;
-                  width: 40px;
-                  height: 40px;
-                  border-radius: 50%;
-                  cursor: pointer;
-                  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-                  z-index: 2;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
+            .carousel-btn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background: white;
+                border: none;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                cursor: pointer;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
               }
 
               .carousel-btn.prev { 
-                  left: -30px;
+                  left: -35px;
+                  top: 40%;
               }
 
               .carousel-btn.next { 
-                  right: -30px;
+                  right: 10px;
               }
+
         /* Newsletter */
         .newsletter-section {
             background: linear-gradient(135deg, #333, #666);
