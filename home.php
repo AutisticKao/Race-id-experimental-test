@@ -543,7 +543,7 @@
             
         <!-- Testi 2-->
     <div class="testimonial-slide">
-        <img src=images/runner 2.jpg" alt="Runner" class="runner-photo">
+        <img src="images/runner2.jpg" alt="Runner" class="runner-photo">
         <div class="testimonial-content">
             <p>"Salonpas Run 2024 memberikan pengalaman yang tak terlupakan. Route dan medal nya keren!"</p>
             <div class="runner-info">
