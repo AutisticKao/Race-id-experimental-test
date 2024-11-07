@@ -1,5 +1,8 @@
 <?php include 'header.php'; ?>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
 <main class="signin-container">
     <h2>Sign In</h2>
     <form action="process_signin.php" method="POST" class="signin-form">
@@ -9,12 +12,7 @@
         <label for="password">Password:</label>
         <div class="password-container">
             <input type="password" id="password" name="password" required>
-            <span class="toggle-password">Show</span>
-        </div>
-
-        <!-- Error message placeholder -->
-        <div class="error-message" id="error-message" style="display: none;">
-            Invalid email or password. Please try again.
+            <i class="fas fa-eye toggle-password" id="togglePassword"></i>
         </div>
 
         <button type="submit" class="signin-btn">Sign In</button>
@@ -67,23 +65,17 @@ body {
 .toggle-password {
     position: absolute;
     right: 10px;
-    top: 50%;
+    top: 40%; 
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: 14px;
+    font-size: 18px;
     color: #007bff;
-}
-
-.error-message {
-    color: red;
-    margin-bottom: 20px;
-    font-size: 14px;
 }
 
 .signin-btn {
     width: 100%;
     padding: 12px;
-    background-color: #28a745;
+    background-color: #293e94;
     color: white;
     border: none;
     border-radius: 4px;
@@ -114,22 +106,14 @@ body {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const togglePassword = document.querySelector('.toggle-password');
+    const togglePassword = document.getElementById('togglePassword');
     const passwordInput = document.getElementById('password');
 
     togglePassword.addEventListener('click', function() {
         const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
         passwordInput.setAttribute('type', type);
-        this.textContent = type === 'password' ? 'Show' : 'Hide';
+        this.classList.toggle('fa-eye-slash');
     });
-
-    // Example of showing an error message
-    // This should be controlled by your server-side logic
-    const errorMessage = document.getElementById('error-message');
-    const showError = false; // Set this based on your server-side validation
-    if (showError) {
-        errorMessage.style.display = 'block';
-    }
 });
 </script>
 
