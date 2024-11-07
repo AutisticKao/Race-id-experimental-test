@@ -226,6 +226,7 @@ body {
                         <button class="register-btn">Detail</button>
                     </div>
                 </div>
+
                 <!-- Victoria Run -->
                 <div class="event-card">
                     <div class="event-image">
@@ -240,11 +241,12 @@ body {
                             <span class="distance-tag">5K Run</span>
                             <span class="distance-tag">10K Run</span>
                             <span class="distance-tag">HM </span>
-                            <span class="distance-tag">430K Run</span>
+                            <span class="distance-tag">30K Run</span>
                         </div>
                         <button class="register-btn">Detail</button>
                     </div>
                 </div>
+
                 <!-- MD Mall Blora Run -->
                 <div class="event-card">
                     <div class="event-image">
@@ -262,6 +264,7 @@ body {
                         <button class="register-btn">Detail</button>
                     </div>
                 </div>
+                
                 <!-- TGM Fun Run -->
                 <div class="event-card">
                     <div class="event-image">
