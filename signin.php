@@ -1,4 +1,3 @@
-
 <?php include 'header.php'; ?>
 
 <main class="signin-container">
@@ -8,10 +7,23 @@
         <input type="email" id="email" name="email" required>
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+        <div class="password-container">
+            <input type="password" id="password" name="password" required>
+            <span class="toggle-password">Show</span>
+        </div>
+
+        <!-- Error message placeholder -->
+        <div class="error-message" id="error-message" style="display: none;">
+            Invalid email or password. Please try again.
+        </div>
 
         <button type="submit" class="signin-btn">Sign In</button>
     </form>
+    <div class="form-links">
+        <a href="forgot_password.php">Forgot Password?</a>
+        <span>|</span>
+        <a href="signup.php">Create an Account</a>
+    </div>
 </main>
 
 <style>
@@ -48,6 +60,26 @@ body {
     font-size: 16px;
 }
 
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 14px;
+    color: #007bff;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
 .signin-btn {
     width: 100%;
     padding: 12px;
@@ -63,6 +95,42 @@ body {
 .signin-btn:hover {
     background-color: #218838;
 }
+
+.form-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-links a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const togglePassword = document.querySelector('.toggle-password');
+    const passwordInput = document.getElementById('password');
+
+    togglePassword.addEventListener('click', function() {
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+        this.textContent = type === 'password' ? 'Show' : 'Hide';
+    });
+
+    // Example of showing an error message
+    // This should be controlled by your server-side logic
+    const errorMessage = document.getElementById('error-message');
+    const showError = false; // Set this based on your server-side validation
+    if (showError) {
+        errorMessage.style.display = 'block';
+    }
+});
+</script>
 
 <?php include 'footer.php'; ?>
