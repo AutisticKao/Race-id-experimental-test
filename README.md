@@ -38,7 +38,7 @@
    ```bash
    php artisan serve
 
-6. Access the application at http://localhost:8000
+6. Access the application at `http://localhost:8000`
 
 # How to Contribute 🤝
 1. Fork this repository.
