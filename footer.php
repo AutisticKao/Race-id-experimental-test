@@ -1,7 +1,7 @@
 <footer class="site-footer">
     <style>
         .site-footer {
-            background: #000;
+            background: linear-gradient(to right, #283f95, #2252a4, #1c61b0, #127cc7, #0993d9, #04a3e6) !important;
             color: #fff;
             padding: 40px 0;
             font-size: 0.9em;
