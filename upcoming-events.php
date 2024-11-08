@@ -228,6 +228,7 @@ body {
                         <button class="register-btn">Daftar Sekarang</button>
                     </div>
                 </div>
+                
                 <!-- Victoria Run -->
 <div class="event-card">
     <div class="event-image">
