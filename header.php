@@ -1,7 +1,7 @@
 <style>
     .top-header {
-        background: #000;
-        color: #fff;
+        background: linear-gradient(to right, #283f95, #2252a4, #1c61b0, #127cc7, #0993d9, #04a3e6) !important;
+        color: #fff;    
         padding: 10px 0;
     }
 
@@ -23,6 +23,7 @@
 
     .tagline {
         font-size: 0.9em;
+        color: #fff;
     }
 
     .profile-menu {
@@ -102,7 +103,6 @@
         cursor: pointer;
     }
 
-    /* Add these styles */
     .top-header {
         background: #000;
         color: #fff;
@@ -191,38 +191,8 @@
         background: #444;
         transform: translateY(-2px);
     }
-</style>
 
-<header>
-    <div class="top-header">
-        <div class="top-container">
-            <a href="home.php" class="logo">Race.id</a>
-            <div class="tagline">We provide running information for you.</div>
-            <div class="profile-menu">
-                <div class="profile-icon" onclick="toggleBalloon()">
-                    <div class="profile-img">👤</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Profile Balloon -->
-<div id="profileBalloon" class="profile-balloon">
-    <div class="balloon-content">
-        <h3>Welcome to Race.id!</h3>
-        <div class="balloon-options">
-            <!-- Link to auth.php for Sign In -->
-            <a href="signin.php" class="balloon-btn sign-in">Sign In</a>
-            <div class="divider">or</div>
-            <!-- Link to auth.php for Create Account -->
-            <a href="signup.php" class="balloon-btn create-account">Create Account</a>
-        </div>
-    </div>
-</div>
-
-
-    <style>
-        .profile-balloon {
+    .profile-balloon {
             display: none;
             position: absolute;
             top: 50px;
@@ -282,24 +252,40 @@
         .profile-balloon.active {
             display: block;
         }
-    </style>
 
-    <script>
-        function toggleBalloon() {
-            const balloon = document.getElementById('profileBalloon');
-            balloon.classList.toggle('active');
-        }
+        h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+</style>
 
-        // Close balloon when clicking outside
-        document.addEventListener('click', (e) => {
-            const balloon = document.getElementById('profileBalloon');
-            const profileIcon = document.querySelector('.profile-icon');
-            
-            if (!profileIcon.contains(e.target) && !balloon.contains(e.target)) {
-                balloon.classList.remove('active');
-            }
-        });
-    </script>
+<header>
+    <div class="top-header">
+        <div class="top-container">
+            <a href="home.php" class="logo">Race.id</a>
+            <div class="tagline">We provide running information for you.</div>
+            <div class="profile-menu">
+                <div class="profile-icon" onclick="toggleBalloon()">
+                    <div class="profile-img">👤</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Balloon -->
+<div id="profileBalloon" class="profile-balloon">
+    <div class="balloon-content">
+        <h3>Welcome to Race.id!</h3>
+        <div class="balloon-options">
+            <!-- Link to auth.php for Sign In -->
+            <a href="signin.php" class="balloon-btn sign-in">Sign In</a>
+            <div class="divider">or</div>
+            <!-- Link to auth.php for Create Account -->
+            <a href="signup.php" class="balloon-btn create-account">Create Account</a>
+        </div>
+    </div>
+</div>
+
 
     <div class="nav-container">
         <nav class="nav-menu">
@@ -334,10 +320,19 @@
             profileBalloon.classList.remove('active');
         }
     });
+
+    function toggleBalloon() {
+            const balloon = document.getElementById('profileBalloon');
+            balloon.classList.toggle('active');
+        }
+
+        // Close balloon when clicking outside
+        document.addEventListener('click', (e) => {
+            const balloon = document.getElementById('profileBalloon');
+            const profileIcon = document.querySelector('.profile-icon');
+            
+            if (!profileIcon.contains(e.target) && !balloon.contains(e.target)) {
+                balloon.classList.remove('active');
+            }
+        });
 </script>
-<style>
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-    }
-</style>

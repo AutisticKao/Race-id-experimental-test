@@ -127,7 +127,7 @@
         }
         /* Stats Counter */
         .stats-section {
-            background: linear-gradient(135deg, #000000, #333333);
+            background: linear-gradient(to right, #283f95, #2252a4, #1c61b0, #127cc7, #0993d9, #04a3e6) !important;
             padding: 40px 0;
             color: white;
             text-align: center;
