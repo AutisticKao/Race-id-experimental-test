@@ -103,6 +103,7 @@
             background: white;
             transform: scale(1.1);
         }
+
         .banner-dots {
             position: absolute;
             bottom: 30px;
@@ -112,6 +113,7 @@
             gap: 10px;
             z-index: 10;
         }
+
         .dot {
             width: 12px;
             height: 12px;
@@ -187,7 +189,7 @@
 
         .category-icon {
             font-size: 2.5em;
-            color: #000000;
+            color: linear-gradient(to right, #283f95, #2252a4, #1c61b0, #127cc7, #0993d9, #04a3e6)
             margin-bottom: 20px;
         }
 
@@ -393,27 +395,27 @@
             gap: 15px;
             margin: 20px 0;
         }
-
+        
         .newsletter-form input {
             flex: 1;
             padding: 15px;
             border: none;
             border-radius: 30px;
             font-size: 1em;
-        }
+        }   
 
         .newsletter-form button {
             padding: 15px 30px;
-            background: #ff4d4d;
+            background: #04a3e6;
             color: white;
             border: none;
-            border-radius: 30px;
+            border-radius: 40px;
             cursor: pointer;
             transition: all 0.3s ease;
         }
 
         .newsletter-form button:hover {
-            background: #ff3333;
+            background: #2154a5;
             transform: translateY(-2px);
         }
 
