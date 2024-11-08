@@ -396,6 +396,7 @@ body {
           <a href="live-events.php" class="view-all">Lihat Semua</a>
       </div>
       <div class="event-grid">
+
           <!-- Salonpas Run Card -->
           <div class="event-card">
               <div class="event-image">
@@ -459,6 +460,27 @@ body {
           <a href="upcoming-events.php" class="view-all">Lihat Semua</a>
       </div>
       <div class="event-grid">
+
+      <!-- IFG Labuan Bajo Marathon 2024 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/labuan bajo.jpg" alt="IFG Labuan Bajo Marathon 2024">
+                        <span class="event-badge">Upcoming</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>IFG Labuan Bajo 2024</h3>
+                        <p class="event-info">9 November 2024</p>
+                        <p class="event-info">Marina Waterfront Labuan Bajo, NTT</p>
+                        <div class="distance-tags">
+                            <span class="distance-tag">5K Run</span>
+                            <span class="distance-tag">10K Run</span>
+                            <span class="distance-tag">HM</span>
+                            <span class="distance-tag">FM</span>
+                        </div>
+                        <button class="register-btn">Detail</button>
+                    </div>
+                </div>
+
           <!-- Astra Half Marathon -->
           <div class="event-card">
               <div class="event-image">
