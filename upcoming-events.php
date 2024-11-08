@@ -191,20 +191,21 @@ body {
             </div>
 
             <div class="event-grid">
-                <!-- Astra Half Marathon -->
+                <!-- IFG Labuan Bajo Marathon 2024 -->
                 <div class="event-card">
                     <div class="event-image">
-                        <img src="images/Astra Run 2024.jpg" alt="Astra Half Marathon 2024">
+                        <img src="images/labuan bajo.jpg" alt="IFG Labuan Bajo Marathon 2024">
                         <span class="event-badge">Upcoming</span>
                     </div>
                     <div class="event-details">
-                        <h3>Astra Half Marathon 2024</h3>
-                        <p class="event-info">10 November 2024</p>
-                        <p class="event-info">Astra Biz Center, BSD</p>
+                        <h3>IFG Labuan Bajo 2024</h3>
+                        <p class="event-info">9 November 2024</p>
+                        <p class="event-info">Marina Waterfront Labuan Bajo, NTT</p>
                         <div class="distance-tags">
                             <span class="distance-tag">5K Run</span>
                             <span class="distance-tag">10K Run</span>
                             <span class="distance-tag">HM</span>
+                            <span class="distance-tag">FM</span>
                         </div>
                         <button class="register-btn">Daftar Sekarang</button>
                     </div>
@@ -228,85 +229,81 @@ body {
                         <button class="register-btn">Daftar Sekarang</button>
                     </div>
                 </div>
-                
-                <!-- Victoria Run -->
-<div class="event-card">
-    <div class="event-image">
-        <img src="images/victoria.png" alt="Victoria Run 2024">
+
+                <!-- Midea Run to Party -->
+    <div class="event-card">
+        <div class="event-image">
+        <img src="images/midea.jpg" alt="Midea Run to Party 2024">
         <span class="event-badge">Upcoming</span>
     </div>
     <div class="event-details">
-        <h3>Victoria Run 2024</h3>
-        <p class="event-info">3 November 2024</p>
-        <p class="event-info">QBIG, BSD</p>
+        <h3>Midea Run to Party 2024</h3>
+        <p class="event-info">10 November 2024</p>
+        <p class="event-info">Pantai Indah Kapuk, Jakarta Utara</p>
         <div class="distance-tags">
             <span class="distance-tag">5K Run</span>
             <span class="distance-tag">10K Run</span>
-            <span class="distance-tag">HM </span>
-            <span class="distance-tag">30K</span>
         </div>
         <button class="register-btn">Daftar Sekarang</button>
     </div>
 </div>
 
-<!-- Borobudur Marathon -->
+<!-- Carangsari Heritage Run -->
 <div class="event-card">
     <div class="event-image">
-        <img src="images/borobudur.jpg" alt="Borobudur Marathon 2024">
+        <img src="images/carangsari.jpg" alt="Carangsari Heritage Run 2024">
         <span class="event-badge">Upcoming</span>
     </div>
     <div class="event-details">
-        <h3>Borobudur Marathon 2024</h3>
-        <p class="event-info">17 November 2024</p>
-        <p class="event-info">Magelang, Jawa Tengah</p>
+        <h3>Carangsari Heritage Run 2024</h3>
+        <p class="event-info">10 November 2024</p>
+        <p class="event-info">Desa Carangsari, Bali</p>
         <div class="distance-tags">
+            <span class="distance-tag">5K Run</span>
             <span class="distance-tag">10K Run</span>
-            <span class="distance-tag">HM</span>
-            <span class="distance-tag">FM</span>
+            <span class="distance-tag">15K Run</span>
         </div>
         <button class="register-btn">Daftar Sekarang</button>
     </div>
 </div>
 
-<!-- Bali Marathon -->
+<!-- Salak Eco Trail Run -->
 <div class="event-card">
     <div class="event-image">
-        <img src="images/bali.jpg" alt="Bali Marathon 2024">
+        <img src="images/salak.png" alt="Salak Eco Trail run 2024">
         <span class="event-badge">Upcoming</span>
     </div>
     <div class="event-details">
-        <h3>Bali Marathon 2024</h3>
-        <p class="event-info">24 November 2024</p>
+        <h3>Salak eco Trail Run 2024</h3>
+        <p class="event-info">10 November 2024</p>
         <p class="event-info">Gianyar, Bali</p>
         <div class="distance-tags">
-            <span class="distance-tag">5K Run</span>
-            <span class="distance-tag">10K Run</span>
-            <span class="distance-tag">HM</span>
-            <span class="distance-tag">FM</span>
+            <span class="distance-tag">6K Run</span>
+            <span class="distance-tag">12K Run</span>
+            <span class="distance-tag">21K Run</span>
         </div>
         <button class="register-btn">Daftar Sekarang</button>
     </div>
 </div>
 
-<!-- Victoria Run -->
+<!-- Astra Half Marathon -->
 <div class="event-card">
-    <div class="event-image">
-        <img src="images/victoria.png" alt="Victoria Run 2024">
-        <span class="event-badge">Upcoming</span>
-    </div>
-    <div class="event-details">
-        <h3>Victoria Run 2024</h3>
-        <p class="event-info">3 November 2024</p>
-        <p class="event-info">QBIG, BSD</p>
-        <div class="distance-tags">
-            <span class="distance-tag">5K Run</span>
-            <span class="distance-tag">10K Run</span>
-            <span class="distance-tag">HM </span>
-            <span class="distance-tag">30K</span>
-        </div>
-        <button class="register-btn">Daftar Sekarang</button>
-    </div>
-</div>
+                    <div class="event-image">
+                        <img src="images/Astra Run 2024.jpg" alt="Astra Half Marathon 2024">
+                        <span class="event-badge">Upcoming</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Astra Half Marathon 2024</h3>
+                        <p class="event-info">10 November 2024</p>
+                        <p class="event-info">Astra Biz Center, BSD</p>
+                        <div class="distance-tags">
+                            <span class="distance-tag">5K Run</span>
+                            <span class="distance-tag">10K Run</span>
+                            <span class="distance-tag">HM</span>
+                        </div>
+                        <button class="register-btn">Daftar Sekarang</button>
+                    </div>
+                </div>
 
             </div>
         </section>
