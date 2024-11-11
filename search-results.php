@@ -1,9 +1,10 @@
 <?php include 'header.php'; ?>
 
 <style>
-    .fade-slide-in {
+.fade-slide-in {
     animation: fadeSlideIn 1s ease-out;
 }
+
 @keyframes fadeSlideIn {
     0% {
         opacity: 0;
@@ -15,7 +16,6 @@
     }
 }
 
-/* Reset margin dan padding global */
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +26,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    background: var(--gray-light);
 }
 
 main {
@@ -38,11 +40,6 @@ main {
     --gray-light: #f8f8f8;
     --gray-medium: #e0e0e0;
     --gray-dark: #333333;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background: var(--gray-light);
 }
 
 .event-section {
@@ -144,135 +141,16 @@ body {
     border-radius: 20px;
     font-size: 14px;
     color: var(--primary);
+    border: 1px solid var(--gray-medium);
+    transition: all 0.3s ease;
 }
-</style>
-  <main class="page-transition">
-      <div class="fade-slide-in">
-          <div class="back-button">
-              <a href="race.php" class="back-link">
-                  <span>←</span> Kembali ke Race
-              </a>
-          </div>
 
-          <div class="search-results">
-              <div class="results-header">
-                  <h2>Hasil Pencarian</h2>
-                  <div class="filter-tags">
-                      <span class="tag">3 November 2024</span>
-                      <span class="tag">Jakarta</span>
-                      <span class="tag">Road</span>
-                      <span class="tag">10K</span>
-                  </div>
-              </div>
-                <div class="event-grid">
-                    <!-- Salonpas Run Card -->
-                    <div class="event-card">
-                        <div class="event-image">
-                            <img src="images/salonpas.png" alt="Salonpas Run 2024">
-                            <span class="event-badge">Live</span>
-                        </div>
-                        <div class="event-details">
-                            <h3>Salonpas Run 2024</h3>
-                            <p class="event-info">3 November 2024</p>
-                            <p class="event-info">Jakarta</p>
-                            <div class="distance-tags">
-                                <span class="distance-tag">5K Run</span>
-                                <span class="distance-tag">10K Run</span>
-                            </div>
-                            <button class="register-btn">Daftar Sekarang</button>
-                        </div>
-                    </div>
+.filter-tags .tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
-                    <!-- ISEF Family Run Card -->
-                    <div class="event-card">
-                        <div class="event-image">
-                            <img src="images/isef run.png" alt="ISEF Family Run 2024">
-                            <span class="event-badge">Live</span>
-                        </div>
-                        <div class="event-details">
-                        <h3>ISEF Family Run 2024</h3>
-                        <p class="event-info">3 November 2024</p>
-                        <p class="event-info">JCC, Jakarta</p>
-                        <div class="distance-tags">
-                            <span class="distance-tag">3K Run</span>
-                            <span class="distance-tag">5K Run</span>
-                            </div>
-                            <button class="register-btn">Daftar Sekarang</button>
-                        </div>
-                    </div>
-                </div>
-          </div>
-      </div>
-  </main>
-
-  <style>
-  .back-button {
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 0 20px;
-  }
-
-  .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 500;
-      transition: all 0.3s ease;
-  }
-
-  .back-link:hover {
-      transform: translateX(-5px);
-  }
-
-  .back-link span {
-      font-size: 20px;
-  }
-
-  .search-results {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-  }
-
-  .results-header {
-      margin-bottom: 30px;
-  }
-
-  .results-header h2 {
-      font-size: 24px;
-      color: var(--primary);
-      margin-bottom: 15px;
-  }
-
-  .filter-tags {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-  }
-
-  .filter-tags .tag {
-      padding: 8px 20px;
-      background: var(--gray-light);
-      border-radius: 20px;
-      font-size: 14px;
-      color: var(--primary);
-      border: 1px solid var(--gray-medium);
-      transition: all 0.3s ease;
-  }
-
-  .filter-tags .tag:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-
-  .event-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 20px;
-  }
-  .distance-tags {
+.distance-tags {
     display: flex;
     gap: 8px;
     margin: 8px 0;
@@ -287,19 +165,117 @@ body {
     color: var(--primary);
     border: 1px solid var(--gray-medium);
 }
-  </style>
 
-  <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const registerButtons = document.querySelectorAll('.register-btn');
-      registerButtons.forEach(button => {
-          button.addEventListener('click', function() {
-              const eventTitle = this.closest('.event-card').querySelector('h3').textContent;
-              alert(`Pendaftaran untuk ${eventTitle} akan segera diproses!`);
-          });
-      });
-  });
-  </script>
+.back-button {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
 
-  <?php include 'footer.php'; ?>
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
 
+.back-link:hover {
+    transform: translateX(-5px);
+}
+
+.back-link span {
+    font-size: 20px;
+}
+
+.search-results {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.results-header {
+    margin-bottom: 30px;
+}
+
+.results-header h2 {
+    font-size: 24px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+</style>
+
+<main class="page-transition">
+    <div class="fade-slide-in">
+        <div class="back-button">
+            <a href="race.php" class="back-link">
+                <span>←</span> Kembali ke Race
+            </a>
+        </div>
+
+        <div class="search-results">
+            <div class="results-header">
+                <h2>Hasil Pencarian</h2>
+                <div class="filter-tags">
+                    <span class="tag">3 November 2024</span>
+                    <span class="tag">Jakarta</span>
+                    <span class="tag">Road</span>
+                    <span class="tag">10K</span>
+                </div>
+            </div>
+            <div class="event-grid">
+                <!-- Salonpas Run Card -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/salonpas.png" alt="Salonpas Run 2024">
+                        <span class="event-badge">Live</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Salonpas Run 2024</h3>
+                        <p class="event-info">3 November 2024</p>
+                        <p class="event-info">Jakarta</p>
+                        <div class="distance-tags">
+                            <span class="distance-tag">5K Run</span>
+                            <span class="distance-tag">10K Run</span>
+                        </div>
+                        <button class="register-btn">Daftar Sekarang</button>
+                    </div>
+                </div>
+
+                <!-- ISEF Family Run Card -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/isef run.png" alt="ISEF Family Run 2024">
+                        <span class="event-badge">Live</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>ISEF Family Run 2024</h3>
+                        <p class="event-info">3 November 2024</p>
+                        <p class="event-info">JCC, Jakarta</p>
+                        <div class="distance-tags">
+                            <span class="distance-tag">3K Run</span>
+                            <span class="distance-tag">5K Run</span>
+                        </div>
+                        <button class="register-btn">Daftar Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const registerButtons = document.querySelectorAll('.register-btn');
+    registerButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const eventTitle = this.closest('.event-card').querySelector('h3').textContent;
+            alert(`Pendaftaran untuk ${eventTitle} akan segera diproses!`);
+        });
+    });
+});
+</script>
+
+<?php include 'footer.php'; ?>
