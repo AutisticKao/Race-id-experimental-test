@@ -408,6 +408,7 @@ body {
                         <button class="register-btn">Detail</button>
                     </div>
                 </div>
+                
                  <!-- TGM Fun Run -->
                  <div class="event-card">
                     <div class="event-image">
