@@ -375,6 +375,7 @@ body {
                         <button onclick="window.location.href='race-details.php'" class="register-btn">Detail</button>
                     </div>
                 </div>
+                
                 <!-- Arutmin Run -->
                 <div class="event-card">
                     <div class="event-image">
@@ -408,7 +409,7 @@ body {
                         <button class="register-btn">Detail</button>
                     </div>
                 </div>
-                
+
                  <!-- TGM Fun Run -->
                  <div class="event-card">
                     <div class="event-image">
