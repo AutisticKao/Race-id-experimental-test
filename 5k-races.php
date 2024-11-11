@@ -408,6 +408,22 @@ body {
                         <button class="register-btn">Detail</button>
                     </div>
                 </div>
+                 <!-- TGM Fun Run -->
+                 <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/TGM Fun Run.jpg" alt="TGM Fun Run 2024">
+                        <span class="event-badge">Live</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>TGM Fun Run 2024</h3>
+                        <p class="event-info">3 November 2024</p>
+                        <p class="event-info">Alas Daun, Bandung, Jawa Barat</p>
+                        <div class="distance-tags">
+                            <span class="distance-tag">5K Run</span>
+                        </div>
+                        <button class="register-btn">Detail</button>
+                    </div>
+                </div>
             </div>
             
             
