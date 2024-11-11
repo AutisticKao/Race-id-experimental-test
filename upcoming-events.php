@@ -322,7 +322,7 @@
             registerButtons.forEach(button => {
                 button.addEventListener('click', function() {
                     const eventTitle = this.closest('.event-card').querySelector('h3').textContent;
-                    alert(`Pendaftaran untuk ${eventTitle} akan segera diproses!`);
+                   // alert(`Pendaftaran untuk ${eventTitle} akan segera diproses!`);
                 });
             });
         });
