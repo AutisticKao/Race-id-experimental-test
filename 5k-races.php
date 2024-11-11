@@ -372,10 +372,45 @@ body {
                         <div class="distance-tags">
                             <span class="distance-tag">5K Run</span>
                         </div>
-                        <button class="register-btn">Daftar Sekarang</button>
+                        <button onclick="window.location.href='race-details.php'" class="register-btn">Detail</button>
+                    </div>
+                </div>
+                <!-- Arutmin Run -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/arutmin.jpg" alt="Arutmin Run 2024">
+                        <span class="event-badge">Live</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Arutmin Run 2024</h3>
+                        <p class="event-info">3 November 2024</p>
+                        <p class="event-info">Kalimantan Selatan</p>
+                        <div class="distance-tags">
+                            <span class="distance-tag">5K Run</span>
+                        </div>
+                        <button class="register-btn">Detail</button>
+                    </div>
+                </div>
+
+                <!-- Victoria Run -->
+                <div class="event-card">
+                    <div class="event-image">
+                    <img src="images/victoria.png" alt="Victoria Run 2024">
+                    <span class="event-badge">Live</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Victoria Run 2024</h3>
+                        <p class="event-info">3 November 2024</p>
+                        <p class="event-info">QBIG BSD, Tangerang</p>
+                        <div class="distance-tags">
+                            <span class="distance-tag">5K Run</span>
+                        </div>
+                        <button class="register-btn">Detail</button>
                     </div>
                 </div>
             </div>
+            
+            
         </section>
 
         <!-- Upcoming Events Section -->
@@ -397,9 +432,11 @@ body {
                         <div class="distance-tags">
                             <span class="distance-tag">5K Run</span>
                         </div>
-                        <button class="register-btn">Daftar Sekarang</button>
+                        <button class="register-btn">Detail</button>
                     </div>
                 </div>
+
+                                
             </div>
         </section>
     </div>
@@ -411,7 +448,7 @@ document.addEventListener('DOMContentLoaded', function() {
     registerButtons.forEach(button => {
         button.addEventListener('click', function() {
             const eventTitle = this.closest('.event-card').querySelector('h3').textContent;
-            alert(`Pendaftaran untuk ${eventTitle} akan segera diproses!`);
+           /// alert(`Pendaftaran untuk ${eventTitle} akan segera diproses!`);
         });
     });
 });
