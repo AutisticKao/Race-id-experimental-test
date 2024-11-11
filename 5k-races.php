@@ -16,73 +16,38 @@ body {
     background: var(--gray-light);
 }
 
-.hero-content h1 {
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 600;
-    font-size: 48px;
-    margin-bottom: 30px;
-}
-
-.event-details h3 {
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 500;
-    margin: 0 0 15px 0;
-    color: var(--primary);
-}
-
-.section-header h2 {
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 25px;
-}
-
-.event-info {
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 400;
-    margin: 8px 0;
-}
-
-.distance-tag {
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 400;
-    margin: 12px 0;
-}
-
-.register-btn {
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 500;
-    margin-top: 15px;
-}
-
-.fade-slide-in {
-    animation: fadeSlideIn 1s ease-out;
-}
-
-@keyframes fadeSlideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 .hero-section {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/marathon.jpeg');
-    background-size: cover;
-    background-position: center;
+    position: relative;
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--secondary);
     text-align: center;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content h1 {
+    font-weight: 600;
     font-size: 48px;
     margin-bottom: 30px;
 }
@@ -110,6 +75,11 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    background: var(--gray-dark);
+    transform: translateY(-2px);
 }
 
 .quick-filters {
@@ -227,11 +197,13 @@ body {
 }
 
 .event-details h3 {
-    margin: 0 0 10px 0;
+    font-weight: 500;
+    margin: 0 0 15px 0;
     color: var(--primary);
 }
 
 .event-info {
+    font-weight: 400;
     color: var(--gray-dark);
     margin: 5px 0;
 }
@@ -302,52 +274,52 @@ body {
         <!-- Advanced Filter -->
         <div class="advanced-filter">
             <div class="filter-group">
-            <select>
-                <option value="">Kategori</option>
-                <option value="road">Road Run</option>
-                <option value="trail">Trail Run</option>
-                <option value="virtual">Virtual Run</option>
-              </select>
-              <select>
-                <option value="">Lokasi</option>
-                <option value="aceh">Aceh</option>
-                <option value="sumut">Sumatera Utara</option>
-                <option value="sumbar">Sumatera Barat</option>
-                <option value="riau">Riau</option>
-                <option value="jambi">Jambi</option>
-                <option value="sumsel">Sumatera Selatan</option>
-                <option value="bengkulu">Bengkulu</option>
-                <option value="lampung">Lampung</option>
-                <option value="babel">Kepulauan Bangka Belitung</option>
-                <option value="kepri">Kepulauan Riau</option>
-                <option value="jakarta">DKI Jakarta</option>
-                <option value="jabar">Jawa Barat</option>
-                <option value="jateng">Jawa Tengah</option>
-                <option value="yogya">DI Yogyakarta</option>
-                <option value="jatim">Jawa Timur</option>
-                <option value="banten">Banten</option>
-                <option value="bali">Bali</option>
-                <option value="ntb">Nusa Tenggara Barat</option>
-                <option value="ntt">Nusa Tenggara Timur</option>
-                <option value="kalbar">Kalimantan Barat</option>
-                <option value="kalteng">Kalimantan Tengah</option>
-                <option value="kalsel">Kalimantan Selatan</option>
-                <option value="kaltim">Kalimantan Timur</option>
-                <option value="kalut">Kalimantan Utara</option>
-                <option value="sulut">Sulawesi Utara</option>
-                <option value="sulteng">Sulawesi Tengah</option>
-                <option value="sulsel">Sulawesi Selatan</option>
-                <option value="sultengg">Sulawesi Tenggara</option>
-                <option value="gorontalo">Gorontalo</option>
-                <option value="sulbar">Sulawesi Barat</option>
-                <option value="maluku">Maluku</option>
-                <option value="malut">Maluku Utara</option>
-                <option value="papuabarat">Papua Barat</option>
-                <option value="papua">Papua</option>
-                <option value="papuaselatan">Papua Selatan</option>
-                <option value="papuatengah">Papua Tengah</option>
-                <option value="papuapegunungan">Papua Timur</option>
-              </select>
+                <select>
+                    <option value="">Kategori</option>
+                    <option value="road">Road Run</option>
+                    <option value="trail">Trail Run</option>
+                    <option value="virtual">Virtual Run</option>
+                </select>
+                <select>
+                    <option value="">Lokasi</option>
+                    <option value="aceh">Aceh</option>
+                    <option value="sumut">Sumatera Utara</option>
+                    <option value="sumbar">Sumatera Barat</option>
+                    <option value="riau">Riau</option>
+                    <option value="jambi">Jambi</option>
+                    <option value="sumsel">Sumatera Selatan</option>
+                    <option value="bengkulu">Bengkulu</option>
+                    <option value="lampung">Lampung</option>
+                    <option value="babel">Kepulauan Bangka Belitung</option>
+                    <option value="kepri">Kepulauan Riau</option>
+                    <option value="jakarta">DKI Jakarta</option>
+                    <option value="jabar">Jawa Barat</option>
+                    <option value="jateng">Jawa Tengah</option>
+                    <option value="yogya">DI Yogyakarta</option>
+                    <option value="jatim">Jawa Timur</option>
+                    <option value="banten">Banten</option>
+                    <option value="bali">Bali</option>
+                    <option value="ntb">Nusa Tenggara Barat</option>
+                    <option value="ntt">Nusa Tenggara Timur</option>
+                    <option value="kalbar">Kalimantan Barat</option>
+                    <option value="kalteng">Kalimantan Tengah</option>
+                    <option value="kalsel">Kalimantan Selatan</option>
+                    <option value="kaltim">Kalimantan Timur</option>
+                    <option value="kalut">Kalimantan Utara</option>
+                    <option value="sulut">Sulawesi Utara</option>
+                    <option value="sulteng">Sulawesi Tengah</option>
+                    <option value="sulsel">Sulawesi Selatan</option>
+                    <option value="sultengg">Sulawesi Tenggara</option>
+                    <option value="gorontalo">Gorontalo</option>
+                    <option value="sulbar">Sulawesi Barat</option>
+                    <option value="maluku">Maluku</option>
+                    <option value="malut">Maluku Utara</option>
+                    <option value="papuabarat">Papua Barat</option>
+                    <option value="papua">Papua</option>
+                    <option value="papuaselatan">Papua Selatan</option>
+                    <option value="papuatengah">Papua Tengah</option>
+                    <option value="papuapegunungan">Papua Timur</option>
+                </select>
                 <input type="date" placeholder="Tanggal">
                 <button class="search-btn">Search Events</button>
             </div>
@@ -375,7 +347,7 @@ body {
                         <button onclick="window.location.href='race-details.php'" class="register-btn">Detail</button>
                     </div>
                 </div>
-                
+
                 <!-- Arutmin Run -->
                 <div class="event-card">
                     <div class="event-image">
@@ -396,8 +368,8 @@ body {
                 <!-- Victoria Run -->
                 <div class="event-card">
                     <div class="event-image">
-                    <img src="images/victoria.png" alt="Victoria Run 2024">
-                    <span class="event-badge">Live</span>
+                        <img src="images/victoria.png" alt="Victoria Run 2024">
+                        <span class="event-badge">Live</span>
                     </div>
                     <div class="event-details">
                         <h3>Victoria Run 2024</h3>
@@ -410,8 +382,8 @@ body {
                     </div>
                 </div>
 
-                 <!-- TGM Fun Run -->
-                 <div class="event-card">
+                <!-- TGM Fun Run -->
+                <div class="event-card">
                     <div class="event-image">
                         <img src="images/TGM Fun Run.jpg" alt="TGM Fun Run 2024">
                         <span class="event-badge">Live</span>
@@ -427,8 +399,6 @@ body {
                     </div>
                 </div>
             </div>
-            
-            
         </section>
 
         <!-- Upcoming Events Section -->
@@ -453,8 +423,6 @@ body {
                         <button class="register-btn">Detail</button>
                     </div>
                 </div>
-
-                                
             </div>
         </section>
     </div>
@@ -462,11 +430,30 @@ body {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    const heroSection = document.querySelector('.hero-section');
+    const images = [
+        'images/marathon.jpeg',
+        'images/marathon2.jpg',
+        'images/marathon3.jpg'
+    ];
+    let currentIndex = 0;
+
+    function changeBackground() {
+        currentIndex = (currentIndex + 1) % images.length;
+        heroSection.style.backgroundImage = `url(${images[currentIndex]})`;
+    }
+
+    // Set initial background
+    heroSection.style.backgroundImage = `url(${images[currentIndex]})`;
+
+    // Change background every 3 seconds
+    setInterval(changeBackground, 3000);
+
     const registerButtons = document.querySelectorAll('.register-btn');
     registerButtons.forEach(button => {
         button.addEventListener('click', function() {
             const eventTitle = this.closest('.event-card').querySelector('h3').textContent;
-           /// alert(`Pendaftaran untuk ${eventTitle} akan segera diproses!`);
+            alert(`Pendaftaran untuk ${eventTitle} akan segera diproses!`);
         });
     });
 });
