@@ -323,7 +323,7 @@ body {
           <h1>Find Your Next Race</h1>
           <div class="search-bar">
               <input type="text" placeholder="Cari event marathon...">
-              <button onclick="window.location.href='search-results.php'" class="search-btn">Search Events</button>
+              <button onclick="window.location.href='search-result-from-race-search.php'" class="search-btn">Search Events</button>
           </div>
       </div>
   </div>
@@ -432,7 +432,7 @@ body {
                   <button class="register-btn">Detail</button>
               </div>
           </div>
-          
+
           <!-- Victoria Run Card -->
           <div class="event-card">
     <div class="event-image">
