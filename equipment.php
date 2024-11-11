@@ -75,7 +75,7 @@
             padding: 15px 30px;
             border: none;
             border-radius: 25px;
-            background: #ff4d4d;
+            background: #04a3e6;
             color: white;
             font-weight: bold;
             cursor: pointer;
@@ -84,6 +84,7 @@
 
         .notify-button:hover {
             transform: scale(1.05);
+            background: #2154a5;
         }
 
         .countdown {
@@ -108,7 +109,87 @@
 
         .countdown-label {
             font-size: 0.9em;
-            color: #888;
+            color: #2154a5;
+        }
+
+        .waitlist-section {
+            margin-top: 40px;
+            animation: fadeIn 1s ease 1.2s both;
+        }
+
+        .early-bird-banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .sparkle {
+            font-size: 1.5em;
+            animation: sparkle 1.5s infinite;
+        }
+
+        .waitlist-benefits {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .benefit-item {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            width: 150px;
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .waitlist-counter {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #waitlist-count {
+            color: #ff4d4d;
+            font-weight: bold;
+        }
+
+        .progress-bar {
+            background: rgba(255, 255, 255, 0.1);
+            height: 10px;
+            border-radius: 5px;
+            margin: 15px auto;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        .progress {
+            background: #2154a5;
+            height: 100%;
+            border-radius: 5px;
+            transition: width 1s ease;
+        }
+
+        .slots-left {
+            color: #ff4d4d;
+            font-size: 0.9em;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
         }
 
         @keyframes fadeInDown {
@@ -201,88 +282,6 @@
             </div>
         </div>
     </div>
-
-    <style>
-        .waitlist-section {
-            margin-top: 40px;
-            animation: fadeIn 1s ease 1.2s both;
-        }
-
-        .early-bird-banner {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .sparkle {
-            font-size: 1.5em;
-            animation: sparkle 1.5s infinite;
-        }
-
-        .waitlist-benefits {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 20px 0;
-        }
-
-        .benefit-item {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 15px;
-            border-radius: 10px;
-            width: 150px;
-            transition: transform 0.3s ease;
-        }
-
-        .benefit-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .benefit-icon {
-            font-size: 2em;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .waitlist-counter {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        #waitlist-count {
-            color: #ff4d4d;
-            font-weight: bold;
-        }
-
-        .progress-bar {
-            background: rgba(255, 255, 255, 0.1);
-            height: 10px;
-            border-radius: 5px;
-            margin: 15px auto;
-            width: 80%;
-            max-width: 400px;
-        }
-
-        .progress {
-            background: #ff4d4d;
-            height: 100%;
-            border-radius: 5px;
-            transition: width 1s ease;
-        }
-
-        .slots-left {
-            color: #ff4d4d;
-            font-size: 0.9em;
-        }
-
-        @keyframes sparkle {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-        }
-    </style>
 
     <script>
         // Set the launch date (1 month from now)
