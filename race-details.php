@@ -24,6 +24,8 @@
                     <p><strong>Date:</strong> 3 November 2024</p>
                     <p><strong>Location:</strong> Plaza Gajah Mada TMII, Jakarta Timur</p>
                     <p><strong>Category:</strong> Road Run</p>
+                    <div class="category-link">
+        <a href="https://salonpasletsmove.com/registrasi" target="_blank" class="link-btn">Register</a>
                 </div>
             </div>
 
@@ -49,11 +51,10 @@
                     </div>
                 </div>
             </div>
-
-            <div class="category-link">
-        <a href="https://salonpasletsmove.com/registrasi" target="_blank" class="link-btn">Register</a>
     </div>
 </div>
+
+    
 
         </div>
     </div>
