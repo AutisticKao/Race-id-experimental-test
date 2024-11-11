@@ -349,7 +349,7 @@ body {
                 <option value="papuapegunungan">Papua Timur</option>
               </select>
                 <input type="date" placeholder="Tanggal">
-                <button onclick="window.location.href='search-results.php'" class="search-btn">Search Events</button>
+                <button class="search-btn">Search Events</button>
             </div>
         </div>
 
