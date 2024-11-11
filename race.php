@@ -69,6 +69,11 @@
             position: relative;
             z-index: 2; /* Ensure the content is above the overlay */
         }
+        .hero-content h1 {
+            font-weight: 600;
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
         .search-bar {
             display: flex;
             gap: 10px;
