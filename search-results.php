@@ -240,7 +240,7 @@ main {
                             <span class="distance-tag">5K Run</span>
                             <span class="distance-tag">10K Run</span>
                         </div>
-                        <button class="register-btn">Daftar Sekarang</button>
+                        <button onclick="window.location.href='race-details.php'" class="register-btn">Detail</button>
                     </div>
                 </div>
 
@@ -258,7 +258,7 @@ main {
                             <span class="distance-tag">3K Run</span>
                             <span class="distance-tag">5K Run</span>
                         </div>
-                        <button class="register-btn">Daftar Sekarang</button>
+                        <button class="register-btn">Detail</button>
                     </div>
                 </div>
             </div>
@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function() {
     registerButtons.forEach(button => {
         button.addEventListener('click', function() {
             const eventTitle = this.closest('.event-card').querySelector('h3').textContent;
-            alert(`Pendaftaran untuk ${eventTitle} akan segera diproses!`);
+            //alert(`Pendaftaran untuk ${eventTitle} akan segera diproses!`);
         });
     });
 });
