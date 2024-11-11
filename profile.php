@@ -322,11 +322,11 @@
             
             <div class="profile-stats">
                 <div class="stat-item">
-                    <div class="stat-number">12</div>
+                    <div class="stat-number">175</div>
                     <div class="stat-label">Events</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">3</div>
+                    <div class="stat-number">21</div>
                     <div class="stat-label">Medals</div>
                 </div>
             </div>
@@ -349,22 +349,22 @@
                         <div class="best-times-grid">
                             <div class="time-card">
                                 <div class="distance">5K</div>
-                                <div class="time">22:45</div>
+                                <div class="time">15:45</div>
                                 <div class="date">Oct 2023</div>
                             </div>
                             <div class="time-card">
                                 <div class="distance">10K</div>
-                                <div class="time">48:30</div>
+                                <div class="time">36:30</div>
                                 <div class="date">Aug 2023</div>
                             </div>
                             <div class="time-card">
-                                <div class="distance">21.1K</div>
-                                <div class="time">1:52:15</div>
+                                <div class="distance">21K</div>
+                                <div class="time">2:52:15</div>
                                 <div class="date">Sep 2023</div>
                             </div>
                             <div class="time-card">
-                                <div class="distance">42.2K</div>
-                                <div class="time">4:32:00</div>
+                                <div class="distance">42K</div>
+                                <div class="time">7:32:00</div>
                                 <div class="date">Nov 2023</div>
                             </div>
                         </div>
@@ -378,7 +378,7 @@
                                 <div class="medal-icon">🏅</div>
                                 <div class="achievement-details">
                                     <h4>Gold Medal</h4>
-                                    <p>Jakarta Marathon 2023</p>
+                                    <p>Borobudur Marathon 2023</p>
                                 </div>
                             </div>
                             <div class="achievement-card">
@@ -391,7 +391,7 @@
                             <div class="achievement-card">
                                 <div class="medal-icon">⭐</div>
                                 <div class="achievement-details">
-                                    <h4>Sub 2-Hour</h4>
+                                    <h4>#2 Fastest in Indonesia</h4>
                                     <p>Half Marathon Achievement</p>
                                 </div>
                             </div>
@@ -404,10 +404,10 @@
                     <div class="event-item">
                         <div class="event-date">20 Nov 2023</div>
                         <div class="event-details">
-                            <h4>Jakarta Marathon 2023</h4>
-                            <p class="event-category">Full Marathon • 42.2K</p>
+                            <h4>Mandiri Bintan Marathon 2023</h4>
+                            <p class="event-category">Full Marathon • 42K</p>
                             <span class="event-medal">🏅 Gold Medal</span>
-                            <span class="finish-time">Finish Time: 4h 32m</span>
+                            <span class="finish-time">Finish Time: 7h 32m</span>
                         </div>
                     </div>
                     
@@ -415,11 +415,42 @@
                         <div class="event-date">15 Oct 2023</div>
                         <div class="event-details">
                             <h4>Borobudur Marathon</h4>
-                            <p class="event-category">Half Marathon • 21.1K</p>
-                            <span class="event-medal">🏅 Silver Medal</span>
+                            <p class="event-category">10K Marathon • 10K</p>
+                            <span class="event-medal">🏅 Gold Medal</span>
                             <span class="finish-time">Finish Time: 2h 15m</span>
                         </div>
                     </div>
+
+                    <div class="event-item">
+                        <div class="event-date">25 Jun 2023</div>
+                        <div class="event-details">
+                            <h4>Geopark Half Marathon</h4>
+                            <p class="event-category">Half Marathon • 21K</p>
+                            <span class="event-medal">🏅 Silver Medal</span>
+                            <span class="finish-time">Finish Time: 4h 52m</span>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">7 May 2023</div>
+                        <div class="event-details">
+                            <h4>Binloop Ultra 120 2023</h4>
+                            <p class="event-category">120K • 120K</p>
+                            <span class="event-medal">🏅 Bronze Medal</span>
+                            <span class="finish-time">Finish Time: 2d 22h 38m</span>
+                        </div>
+                    </div>
+
+                    <div class="event-item">
+                        <div class="event-date">5 Feb 2023</div>
+                        <div class="event-details">
+                            <h4>Run Against Cancer 2023</h4>
+                            <p class="event-category">10K • 10K</p>
+                            <span class="event-medal">🏅 Bronze Medal</span>
+                            <span class="finish-time">Finish Time: 2h 28m</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
