@@ -445,8 +445,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroSection = document.querySelector('.hero-section');
     const images = [
         'images/marathon.jpeg',
-        'images/image2.jpg',
-        'images/image3.jpg'
+        'images/marathon2.jpg',
+        'images/marathon3.jpg'
     ];
     let currentIndex = 0;
 
