@@ -332,6 +332,8 @@ body {
                 <a href="#" class="view-all">Lihat Semua</a>
             </div>
             <div class="event-grid">
+
+                <!-- Salonpas Run 2024 -->
                 <div class="event-card">
                     <div class="event-image">
                         <img src="images/salonpas.png" alt="Salonpas Run 2024">
@@ -408,15 +410,68 @@ body {
                 <a href="#" class="view-all">Lihat Semua</a>
             </div>
             <div class="event-grid">
+
+            <!-- Astra HM 2024 -->
                 <div class="event-card">
                     <div class="event-image">
                         <img src="images/Astra Run 2024.jpg" alt="Astra Run 2024">
                         <span class="event-badge">Upcoming</span>
                     </div>
                     <div class="event-details">
-                        <h3>Astra Run 2024</h3>
+                        <h3>Astra Half Marathon 2024</h3>
                         <p class="event-info">10 November 2024</p>
                         <p class="event-info">BSD</p>
+                        <div class="distance-tags">
+                            <span class="distance-tag">5K Run</span>
+                        </div>
+                        <button class="register-btn">Detail</button>
+                    </div>
+                </div>
+
+                <!-- Smartfren Fun Run 2024 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/smartfren.jpg" alt="Smartfren Fun Run 2024">
+                        <span class="event-badge">Upcoming</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Smartfren Fun Run Bali 2024</h3>
+                        <p class="event-info">10 November 2024</p>
+                        <p class="event-info">Denspasar, Bali</p>
+                        <div class="distance-tags">
+                            <span class="distance-tag">5K Run</span>
+                        </div>
+                        <button class="register-btn">Detail</button>
+                    </div>
+                </div>
+
+                <!-- Carangsari Heritage Run 2024 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/carangsari.jpg" alt="Carangsari Heritage Run 2024">
+                        <span class="event-badge">Upcoming</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Carangsari Heritage Run 2024</h3>
+                        <p class="event-info">10 November 2024</p>
+                        <p class="event-info">Desa Carangsari, Bali</p>
+                        <div class="distance-tags">
+                            <span class="distance-tag">5K Run</span>
+                        </div>
+                        <button class="register-btn">Detail</button>
+                    </div>
+                </div>
+
+                <!-- Reformasi Run 2024 -->
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="images/reformasi.jpg" alt="Reformasi Run 2024">
+                        <span class="event-badge">Upcoming</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Reformasi Run 2024</h3>
+                        <p class="event-info">10 November 2024</p>
+                        <p class="event-info">Gelora Bung Karno Senayan, Jakarta Selatan</p>
                         <div class="distance-tags">
                             <span class="distance-tag">5K Run</span>
                         </div>
