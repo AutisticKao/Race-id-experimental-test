@@ -2,7 +2,6 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-
 <main class="signin-container">
     <h2>Sign In</h2>
     <form action="process_signin.php" method="POST" class="signin-form">
