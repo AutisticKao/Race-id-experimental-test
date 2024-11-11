@@ -243,24 +243,7 @@ main {
                         <button onclick="window.location.href='race-details.php'" class="register-btn">Detail</button>
                     </div>
                 </div>
-
-                <!-- ISEF Family Run Card -->
-                <div class="event-card">
-                    <div class="event-image">
-                        <img src="images/isef run.png" alt="ISEF Family Run 2024">
-                        <span class="event-badge">Live</span>
-                    </div>
-                    <div class="event-details">
-                        <h3>ISEF Family Run 2024</h3>
-                        <p class="event-info">3 November 2024</p>
-                        <p class="event-info">JCC, Jakarta</p>
-                        <div class="distance-tags">
-                            <span class="distance-tag">3K Run</span>
-                            <span class="distance-tag">5K Run</span>
-                        </div>
-                        <button class="register-btn">Detail</button>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
