@@ -43,6 +43,7 @@
             --gray-dark: #333333;
         }
         .hero-section {
+            position: relative;
             height: 400px;
             display: flex;
             align-items: center;
@@ -52,10 +53,21 @@
             background-size: cover;
             background-position: center;
             transition: background-image 1s ease-in-out;
+            overflow: hidden; /* Ensure the pseudo-element is contained */
         }
-        .hero-content h1 {
-            font-size: 48px;
-            margin-bottom: 30px;
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4); /* Black overlay with 50% opacity */
+            z-index: 1; /* Ensure the overlay is above the background */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2; /* Ensure the content is above the overlay */
         }
         .search-bar {
             display: flex;
@@ -458,8 +470,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set initial background
     heroSection.style.backgroundImage = `url(${images[currentIndex]})`;
 
-    // Change background every 7 seconds
-    setInterval(changeBackground, 7000);
+    // Change background every 3 seconds
+    setInterval(changeBackground, 3000);
 
     // Quick Filter functionality
     const filterTags = document.querySelectorAll('.tag');
