@@ -223,6 +223,7 @@ main {
                 </div>
             </div>
             <div class="event-grid">
+                
                 <!-- Salonpas Run Card -->
                 <div class="event-card">
                     <div class="event-image">
