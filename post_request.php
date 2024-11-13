@@ -32,11 +32,11 @@ function makePostRequest($url, $data) {
     curl_close($ch);
 }
 
-// Example usage
-$url = 'https://example.com/api/race-id-experimental-test';
-$data = [
-    'key1' => 'value1',
-    'key2' => 'value2'
+    // Example usage
+    $url = 'https://steelytoe.com/dev.titudev.com/api/v1/resources/event_header';
+    $data = [
+        'key1' => 'value1',
+        'key2' => 'value2'
 ];
 
 makePostRequest($url, $data);

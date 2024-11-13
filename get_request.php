@@ -1,34 +1,29 @@
 <?php
 
-// Initialize a cURL session
-$ch = curl_init();
+function fetchData($url) {
+    // Initialize cURL session
+    $ch = curl_init($url);
 
-// Set the URL for the GET request
-curl_setopt($ch, CURLOPT_URL, "https://steelytoe.com/dev.titudev.com/api/v1/resources/event_header");
+    // Set cURL options
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-// Set options to return the transfer as a string
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    // Execute cURL request
+    $response = curl_exec($ch);
 
-// Execute the cURL session
-$response = curl_exec($ch);
-
-// Check for cURL errors
-if (curl_errno($ch)) {
-    echo 'cURL error: ' . curl_error($ch);
-} else {
-    // Decode the JSON response
-    $data = json_decode($response, true);
-
-    // Check if decoding was successful
-    if (json_last_error() === JSON_ERROR_NONE) {
-        // Process the data
-        print_r($data);
+    // Check for cURL errors
+    if (curl_errno($ch)) {
+        echo 'cURL error: ' . curl_error($ch);
     } else {
-        echo "Failed to decode JSON: " . json_last_error_msg();
+        // Output the response
+        echo $response;
     }
+
+    // Close cURL session
+    curl_close($ch);
 }
 
-// Close the cURL session
-curl_close($ch);
+// URL to fetch data from
+$url = 'https://steelytoe.com/dev.titudev.com/api/v1/resources/event_header';
 
-?>
+// Fetch and display data
+fetchData($url);
