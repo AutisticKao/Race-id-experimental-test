@@ -1,26 +1,4 @@
-<?php include 'header.php'; 
-
-$ch = curl_init();
-
-curl_setopt($ch, CURLOPT_URL, "https://steelytoe.com/dev.titudev.com/api/v1/resources/event_header");
-
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-
-$jsonData = curl_exec($ch);
-
-if (curl_errno($ch)) {
-    die("cURL error: " . curl_error($ch));
-}
-
-curl_close($ch);
-
-$dataArray = json_decode($jsonData, true);
-
-if ($dataArray === NULL) {
-    die("Error decoding JSON data.");
-}
-
-?>
+<?php include 'header.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
