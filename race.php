@@ -457,6 +457,17 @@
 </main>
 
 <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+            fetch('https://steelytoe.com/dev.titudev.com/api/v1/resources/event_header')
+                .then(response => response.json())
+                .then(data => {
+                    const eventHeader = document.getElementById('event-header');
+                    eventHeader.textContent = JSON.stringify(data);
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        });
+
 document.addEventListener('DOMContentLoaded', function() {
     // Background image rotation for hero section
     const heroSection = document.querySelector('.hero-section');
